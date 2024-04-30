@@ -63,7 +63,7 @@ public class APCalendar
     /* to be implemented in part (b) */
     int startDay = firstDayOfYear(year);
     int nthDay = dayOfYear(month, day, year);
-    int returnDay = (startDay = nthDay - 1) % 7;
+    int returnDay = (startDay + nthDay - 1) % 7;
     return returnDay;
   }
 }
